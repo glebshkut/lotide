@@ -16,7 +16,6 @@ const assertArraysEqual = function(actual, expected) {
 
 
 const without = function(source, itemsToRemove) {
-  // create a new array, result
   let result = [...source];
   for (let i = 0; i < source.length; i++) {
     for (let k = 0; k < itemsToRemove.length; k++) {
