@@ -10,6 +10,14 @@ const findKey = (object, callback) => {
   }
 }
 
+assertEqual(findKey({
+  "Blue Hill": { stars: 1 },
+  "Akaleri":   { stars: 3 },
+  "noma":      { stars: 2 },
+  "elBulli":   { stars: 3.5 },
+  "Ora":       { stars: 2 },
+  "Akelarre":  { stars: 3 }
+}, x => x.stars === 10), undefined);
 
 
 
@@ -48,3 +56,4 @@ assertEqual(findKey({
   "Ora":       { stars: 2 },
   "Akelarre":  { stars: 3 }
 }, x => x.stars === 3.5), "elBulli");
+
