@@ -34,7 +34,8 @@ const map = function(array, callback) {
 
 
 // TESTS
-assertArraysEqual(map([1,2,3,4,5],x => x * 2.5), [2.5,5,7.5,10,12.5]);
-assertArraysEqual(map([1,2,3,4,5],x => x + 10), [11,12,13,14,15]);
-assertArraysEqual(map(['Hello','Bye'], item => item[Math.floor(item.length/2)]), ['l','y']);
+// assertArraysEqual(map([1,2,3,4,5],x => x * 2.5), [2.5,5,7.5,10,12.5]);
+// assertArraysEqual(map([1,2,3,4,5],x => x + 10), [11,12,13,14,15]);
+// assertArraysEqual(map(['Hello','Bye'], item => item[Math.floor(item.length/2)]), ['l','y']);
 
+module.exports = map;
